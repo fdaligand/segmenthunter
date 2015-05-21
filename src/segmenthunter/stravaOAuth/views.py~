@@ -20,6 +20,7 @@ def authent(request):
     accessTokenResp = requests.post('https://www.strava.com/oauth/token',params=getAccess)
     accessToken = accessTokenResp.json()['access_token']
     athlete = accessTokenResp.json()['athlete']
+    pdb.set_trace()
     return render(request,"overview.html",{'athlete':athlete})	
 
 

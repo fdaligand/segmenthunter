@@ -1,0 +1,4 @@
+{% for key in athlete.items %}
+{{ key }} : {{ value }}
+</br>
+{% endfor %}

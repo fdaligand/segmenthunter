@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'stravaOAuth',
+    
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,16 +55,7 @@ WSGI_APPLICATION = 'segmenthunter.wsgi.application'
 
 
 # Template 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            # ... some options here ...
-        },
-    },
-]
+
 
 
 # Database
