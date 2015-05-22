@@ -1,4 +1,10 @@
-{% for key in athlete.items %}
-{{ key }} : {{ value }}
+{% for key,data in athlete.items %}
+{{ key }} : {{ data }}
+    {% if key == 'clubs' %}
+    {% for clubkey,clubvalue in data %}
+        {{ clubkey }} : {{ clubvalue }}
+	</br>
+    {% endfor %}
+    {% endif %}
 </br>
 {% endfor %}
