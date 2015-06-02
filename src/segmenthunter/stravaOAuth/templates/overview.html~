@@ -1,10 +1,20 @@
+Hello {{athlete.firstname}}
+</br>
 {% for key,data in athlete.items %}
-{{ key }} : {{ data }}
+
+
     {% if key == 'clubs' %}
-    {% for clubkey,clubvalue in data %}
-        {{ clubkey }} : {{ clubvalue }}
-	</br>
+    Resume of your clubs
+    <ul>
+    {% for club in data %}
+    <li>name = {{ club.name }}</li>
     {% endfor %}
+    </ul>
+    {% else %}
+        {{ key }} : {{ data }}
     {% endif %}
 </br>
 {% endfor %}
+
+
+

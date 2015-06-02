@@ -7,6 +7,7 @@ import pdb
 
 CLIENT_ID=4656
 CLIENT_SECRET = '9b75ee6abf3f44d7b6f48b7cd9ef6d89dad72090'
+
 def home(request):
     '''root url of the site'''
     
@@ -20,6 +21,9 @@ def authent(request):
     accessTokenResp = requests.post('https://www.strava.com/oauth/token',params=getAccess)
     accessToken = accessTokenResp.json()['access_token']
     athlete = accessTokenResp.json()['athlete']
-    return render(request,"overview.html",{'athlete':athlete})	
+    listKOMandCRs(athlete['id'],accessToken)
+    return render(request,"overview.html",{'athlete':athlete,'accessToken':accessToken})	
 
-
+def listKOMandCRs(id,accessToken,page=None,per_pag=None):
+    overalKOMs = requests.get('https://www.strava.com/api/v3/athletes/  %s/koms'%id,params='access_token=%s'%accessToken)
+    pdb.set_trace()
