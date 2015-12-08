@@ -1,0 +1,86 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap -->
+		<link href={% static "bootstrap/dist/css/bootstrap.min.css" %} rel="stylesheet">
+		
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script source={% static "bootstrap/dist/js/bootstrap.min.js" %}></script>
+	</head>
+ <div class="container-fluid">
+	   <div class="jumbotron">
+		       <h1>My First Bootstrap Page</h1>
+		           <p>Resize this responsive page to see the effect!</p>
+			     </div>
+			       <div class="row">
+				           <div class="col-sm-4">
+						         <h3>Column 1</h3>
+							       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+							             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+								         </div>
+									     <div class="col-sm-4">
+										           <h3>Column 2</h3>
+											         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+												       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+												           </div>
+													       <div class="col-sm-4">
+														             <h3>Column 3</h3>
+															           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+																         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+																	     </div>
+																	       </div>
+
+<h1>Grid System</h1>
+<p>
+First; create a row (<div class="row">). Then, add the desired number of columns (tags with appropriate .col-*-* classes). Note that numbers in .col-*-* should always add up to 12 for each row.
+
+	Below we have collected some examples of basic Bootstrap grid layouts.
+
+</p>
+ <div class="row">
+	   <div class="col-sm-3">.col-sm-3</div>
+	     <div class="col-sm-3">.col-sm-3</div>
+	       <div class="col-sm-6">.col-sm-6</div>
+       </div>
+
+ <h1>TYPOGRAPHY</h1>
+         <h2>SMALL <small>this is small </small> </h2>
+	 <h2>MARK</h2> 
+	 	<mark>this is highlight </mark>
+	<h2> abbr </h2>
+		<p>
+		Very usefull if you have <abbr title="abreviattion !!!">abbr</abbr>
+		</p>
+	<h2>BLOCK QUOTE</h2>
+	<h3>Normal</h3>
+	<blockquote>
+	<p> Can be usefull 
+	for 
+	test results </p>
+	</blockquote>
+	<h3>Reverse</h3>
+	<blockquote class="blockquote-reverse">
+	<p> Can be usefull for test results </p>
+	</blockquote>
+	<h2>Code</h2>
+	<p>Insert peace of <code>code</code> like <code> sudo apt-get install bootstrap</code></p>
+	<h2>PRE</h2>
+	<pre>pre can by used for print peace of code also:
+	import os
+	print os.environ['PATH']
+	</pre>
+	<h2>Contextual color and background</h2>
+	<p>Use the contextual classes to provide "meaning through colors":</p>
+	  <p class="text-muted">This text is muted.</p>
+	    <p class="text-primary">This text is important.</p>
+	      <p class="text-success">This text indicates success.</p>
+	        <p class="text-info">This text represents some information.</p>
+		  <p class="text-warning">This text represents a warning.</p>
+		    <p class="text-danger">This text represents danger.</p>
+		    </div>
+	<html>

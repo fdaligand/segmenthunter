@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stravaOAuth',
+    'bootstraptest',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'segmenthunter.urls'
 WSGI_APPLICATION = 'segmenthunter.wsgi.application'
 
 
-# Template 
+# Template
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
