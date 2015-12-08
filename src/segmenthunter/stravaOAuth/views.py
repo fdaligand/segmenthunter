@@ -12,8 +12,9 @@ def home(request):
     '''root url of the site'''
 
     REDIRECT_URI = 'http://localhost:8000/authent'
-    print REDIRECT_URI
-    return HttpResponse("""<a href="https://www.strava.com/oauth/authorize?client_id=%s&response_type=code&redirect_uri=%s&scope=write&state=fromroot&approval_prompt=auto">click to connect</a>"""%(CLIENT_ID,REDIRECT_URI))
+    return render(request,"home.html",{'url':REDIRECT_URI,
+                                       'clientID':CLIENT_ID,
+                                       })
 
 def authent(request):
     code = request.GET['code']
@@ -25,5 +26,4 @@ def authent(request):
     return render(request,"overview.html",{'athlete':athlete,'accessToken':accessToken})
 
 def listKOMandCRs(id,accessToken,page=None,per_pag=None):
-    overalKOMs = requests.get('https://www.strava.com/api/v3/athletes/  %s/koms'%id,params='access_token=%s'%accessToken)
-    pdb.set_trace()
+    overalKOMs = requests.get('https://www.strava.com/api/v3/athletes/%s/koms'%id,params='access_token=%s'%accessToken)

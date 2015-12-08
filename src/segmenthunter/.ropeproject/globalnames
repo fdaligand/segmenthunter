@@ -1,4 +1,5 @@
-€}q(UstravaOAuth.migrations]UstravaOAuth.views]q(UhomeqUauthentqUlist_friendsqU	CLIENT_IDqUCLIENT_SECRETqeUbootstraptest.tests]Usegmenthunter.wsgi]qUapplicationq	aUstravaOAuth.tests]UstravaOAuth]Usegmenthunter]UstravaOAuth.models]Ubootstraptest.models]Umanage]UstravaOAuth.admin]Ubootstraptest]Ubootstraptest.migrations]Ubootstraptest.urls]q
-UurlpatternsqaUstravaOAuth.urls]qhaUsegmenthunter.settings]q(U	TEMPLATESqUUSE_L10NqULANGUAGE_CODEqUUSE_TZqUUSE_I18NqU	DATABASESqU	TIME_ZONEqU
-STATIC_URLqUROOT_URLCONFqUTEMPLATE_DEBUGqUWSGI_APPLICATIONqUMIDDLEWARE_CLASSESqUDEBUGqUALLOWED_HOSTSqU
-SECRET_KEYqUINSTALLED_APPSqUBASE_DIRqeUbootstraptest.admin]Ubootstraptest.views]qUtestq aUsegmenthunter.urls]q!hau.
+€}q(UstravaOAuth.migrations]Usignchamps.migrations]Umanage]UstravaOAuth.admin]Ubootstraptest.admin]Ubootstraptest.migrations]U
+signchamps]Usegmenthunter]Ubootstraptest.models]UstravaOAuth.models]Usignchamps.tests]Ubootstraptest.urls]qUurlpatternsqaUstravaOAuth.urls]qhaUsegmenthunter.urls]qhaUsignchamps.views]Ubootstraptest.views]qUtestqaUstravaOAuth.views]q(UlistKOMandCRsq	Uhomeq
+UauthentqU	CLIENT_IDqUCLIENT_SECRETqeUsegmenthunter.wsgi]qUapplicationqaUsignchamps.admin]Usignchamps.models]UstravaOAuth]Ubootstraptest.tests]UstravaOAuth.tests]Ubootstraptest]Usegmenthunter.settings]q(U	TEMPLATESqUUSE_L10NqULANGUAGE_CODEqUUSE_TZqUUSE_I18NqU	DATABASESqU	TIME_ZONEqU
+STATIC_URLqUROOT_URLCONFqUTEMPLATE_DEBUGqUWSGI_APPLICATIONqUMIDDLEWARE_CLASSESqUDEBUGqUALLOWED_HOSTSqU
+SECRET_KEYqUINSTALLED_APPSq UBASE_DIRq!eu.

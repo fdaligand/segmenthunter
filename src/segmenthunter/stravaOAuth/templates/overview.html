@@ -1,20 +1,49 @@
-Hello {{athlete.firstname}}
-</br>
-{% for key,data in athlete.items %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap -->
+		<link href={% static "bootstrap/dist/css/bootstrap.min.css" %} rel="stylesheet">
 
 
-    {% if key == 'clubs' %}
-    Resume of your clubs
-    <ul>
-    {% for club in data %}
-    <li>name = {{ club.name }}</li>
-    {% endfor %}
-    </ul>
-    {% else %}
-        {{ key }} : {{ data }}
-    {% endif %}
-</br>
-{% endfor %}
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script source={% static "bootstrap/dist/js/bootstrap.min.js" %}></script>
+	</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<h1>Hello {{athlete.firstname}}</h1>
+		</div>
+		<div class="row">
+        	{% for key,data in athlete.items %}
+		    {% if key == 'clubs' %}
+			    Resume of your clubs
+			    <ul class="list-group">
+			    {% for club in data %}
+				    <li class="list-group-item">name = {{ club.name }}</li>
+			    {% endfor %}
+			    </ul>
+			{% elif key == 'bikes' %}
+			    Resume of your bikes
+			    <ul class="list-group">
+			    {% for bike in data %}
+			    <li class="list-group-item">name = {{ bike.name }} ( {{bike.disatnce}} km)</li>
+			    {% endfor %}
+			    </ul>
+
+		    {% else %}
+		    <h3>{{ key }} </h3> 
+		    <h4>{{ data }}</h4>
+		    {% endif %}
+		{% endfor %}
+		</div>
+	</div>
+</body>
 
 
 
