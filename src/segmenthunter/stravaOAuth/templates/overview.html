@@ -21,7 +21,9 @@
 		</div>
 		<div class="row">
         	{% for key,data in athlete.items %}
-		    {% if key == 'clubs' %}
+		    {% if key == 'profile'%}
+		    <img src="{{data}}"/> 
+		    {% elif key == 'clubs' %}
 			    Resume of your clubs
 			    <ul class="list-group">
 			    {% for club in data %}
@@ -32,7 +34,7 @@
 			    Resume of your bikes
 			    <ul class="list-group">
 			    {% for bike in data %}
-			    <li class="list-group-item">name = {{ bike.name }} ( {{bike.disatnce}} km)</li>
+			    <li class="list-group-item">name = {{ bike.name }} ( {{bike.distance}} km)</li>
 			    {% endfor %}
 			    </ul>
 
