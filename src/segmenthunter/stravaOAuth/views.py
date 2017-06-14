@@ -6,7 +6,7 @@ import pdb
 # Create your views here.
 
 CLIENT_ID=4656
-CLIENT_SECRET = '9b75ee6abf3f44d7b6f48b7cd9ef6d89dad72090'
+CLIENT_SECRET = 'xxx'
 
 def home(request):
     '''root url of the site'''
